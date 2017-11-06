@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: ${PORT:8082}
 
 spring:
 	application:
@@ -8,9 +8,9 @@ spring:
   cloud: 
     config:      
       enabled: true
-      discovery:
-        enabled: true
-        serviceId: configServer
+    discovery:
+      enabled: true
+      serviceId: configServer
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -18,7 +18,6 @@ spring:
 management:
   security:
     enabled: false
-  address: 127.0.0.1
 
   
 feign:
