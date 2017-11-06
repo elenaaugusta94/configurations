@@ -24,3 +24,9 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
+feign:
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true 
